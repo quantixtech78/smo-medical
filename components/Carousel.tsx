@@ -7,7 +7,7 @@ export default function Carousel({
   images,
   alt,
   autoPlay = true,
-  interval = 4500,
+  interval = 3000,
 }: {
   images: string[];
   alt: string;
@@ -20,14 +20,14 @@ export default function Carousel({
 
   const go = useCallback(
     (dir: number) => setIndex((i) => (i + dir + count) % count),
-    [count]
+    [count],
   );
   const to = (i: number) => setIndex(((i % count) + count) % count);
 
   useEffect(() => {
     if (!autoPlay || count <= 1) return;
     const prefersReduced = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
+      "(prefers-reduced-motion: reduce)",
     ).matches;
     if (prefersReduced) return;
     const t = setInterval(() => go(1), interval);

@@ -115,6 +115,37 @@ export default function About() {
           <h2 className="text-3xl lg:text-4xl font-extrabold text-ink leading-tight mt-5 font-display">
             شريكك المتخصص في تجهيز عيادات الأسنان
           </h2>
+
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-l from-petrol to-teal px-5 py-4 mt-5 mb-2 shadow-soft ring-1 ring-white/10">
+            <div className="absolute inset-0 dot-grid opacity-10 pointer-events-none" />
+            <div className="relative flex items-center justify-start gap-4 text-right">
+              <div className="flex items-center justify-center shrink-0 w-12 h-12 rounded-full bg-white/15 backdrop-blur text-mint">
+                <svg
+                  aria-hidden="true"
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 11.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zm0 0c-4 0-7 3-7 7h14c0-4-3-7-7-7z"
+                  />
+                </svg>
+              </div>
+              <div className="min-w-0 text-right">
+                <div className="font-display font-bold text-lg text-mint">
+                  الموزّع الحصري
+                </div>
+                <div className="mt-1 text-sm text-white/80 leading-tight">
+                  في المنطقة الشرقية — المملكة العربية السعودية
+                </div>
+              </div>
+            </div>
+          </div>
+
           <p className="text-ink/70 leading-relaxed mt-5 text-[17px]">
             مؤسسة الخيارات الذكية الطبية شركة متخصصة في تجهيز عيادات الأسنان
             وتوفير أحدث الأجهزة والتقنيات العالمية، لدعم أطباء الأسنان بأفضل
@@ -131,7 +162,11 @@ export default function About() {
                   strokeWidth={2}
                   viewBox="0 0 24 24"
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6l4 2"
+                  />
                   <circle cx="12" cy="12" r="9" />
                 </svg>
               </div>

@@ -21,7 +21,7 @@ export default function CTA() {
             <div className="flex flex-wrap justify-center gap-3 mt-9">
               <a
                 href={site.whatsapp}
-                className="bg-white text-teal font-bold px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-mint hover:text-ink transition-all duration-300 shadow-lg"
+                className="bg-white text-teal font-bold px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-mint hover:text-ink hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg"
               >
                 <svg
                   className="w-5 h-5"
@@ -34,7 +34,7 @@ export default function CTA() {
               </a>
               <a
                 href={`tel:${site.phone}`}
-                className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-white/10 transition-all duration-300"
+                className="border border-white/40 text-white font-semibold px-8 py-4 rounded-full inline-flex items-center gap-2 hover:bg-white/10 hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
                 <svg
                   className="w-5 h-5"

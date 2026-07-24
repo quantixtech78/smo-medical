@@ -14,7 +14,7 @@ export default function Navbar() {
   // Home has a light hero the nav can float over transparently.
   const overHero = pathname === "/";
   // "island" = the floating rounded dark pill (on scroll, or on inner pages).
-  const island = scrolled || !overHero;
+  const island = scrolled;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -68,8 +68,8 @@ export default function Navbar() {
                     ? "text-mint"
                     : "text-white/75 hover:text-white"
                   : active
-                  ? "text-teal"
-                  : "text-ink/80 hover:text-teal";
+                    ? "text-teal"
+                    : "text-ink/80 hover:text-teal";
                 return (
                   <Link
                     key={l.href}
@@ -146,8 +146,8 @@ export default function Navbar() {
                   ? "text-mint"
                   : "text-white/85"
                 : active
-                ? "text-teal"
-                : "text-ink/85";
+                  ? "text-teal"
+                  : "text-ink/85";
               return (
                 <Link
                   key={l.href}

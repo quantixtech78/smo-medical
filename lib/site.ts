@@ -32,7 +32,7 @@ export const images = {
   logo:
     "https://smo-medical.com/wp-content/uploads/2026/05/IMG-20260521-WA0044-removebg-preview-1024x188.png",
   // Hero: a real dental-clinic scene (swap for a /public asset anytime).
-  heroClinic: "/Hero.avif",
+  heroClinic: "/Hero.jpg",
   about1:
     "https://smo-medical.com/wp-content/uploads/2026/05/IMG-20260521-WA0027-685x1024.jpg",
   about2:
