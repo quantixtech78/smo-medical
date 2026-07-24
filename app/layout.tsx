@@ -46,6 +46,26 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: site.url },
+  icons: [
+    {
+      rel: "icon",
+      url: "/smo-icon-square.png",
+      type: "image/png",
+      sizes: "331x331",
+    },
+    {
+      rel: "shortcut icon",
+      url: "/smo-icon-square.png",
+      type: "image/png",
+      sizes: "331x331",
+    },
+    {
+      rel: "apple-touch-icon",
+      url: "/smo-icon-square.png",
+      type: "image/png",
+      sizes: "331x331",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -54,7 +74,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" dir="rtl" className={`${display.variable} ${body.variable}`}>
+    <html
+      lang="ar"
+      dir="rtl"
+      className={`${display.variable} ${body.variable}`}
+    >
       <body className="font-body antialiased">
         <Navbar />
         {children}
